@@ -10,5 +10,5 @@
 	+ Git add [tên file] : chuyển file từ đỏ thành xanh 
 	  Git add .	     : chuyển tất cả file từ đỏ thành xanh
 	+ Git commit -m"message" : chuyển từ staged --> Unmodified (lưu file)
-	+ Git push origin [branch-hiện-tại]:[branch-github] : đẩy tất cả file ở trạng thái Unmodified lên branch của repo Github
+	+ Git push origin [branch-hiện-tại-local]:[branch-github] : đẩy tất cả file ở trạng thái Unmodified lên branch của repo Github
 	
