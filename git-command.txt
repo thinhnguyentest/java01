@@ -1,0 +1,6 @@
+1. GIT COMMAND:
+	- Git init : khởi tạo repository ở local
+	- Git remote add origin [link repo của github] : liên kết giữa repo local và repo github
+	- Git fetch : lấy dữ liệu từ repo của github về repo của local
+	- Git checkout [tên nhánh] : chuyển nhánh
+	
