@@ -3,4 +3,12 @@
 	- Git remote add origin [link repo của github] : liên kết giữa repo local và repo github
 	- Git fetch : lấy dữ liệu từ repo của github về repo của local
 	- Git checkout [tên nhánh] : chuyển nhánh
+
+	==============================
+	- Sau khi code:
+	+ Git status : kiểm tra trạng thái hiện tại của repo (có file nào mới vừa tạo) (đỏ - untracked ; xanh - staged)
+	+ Git add [tên file] : chuyển file từ đỏ thành xanh 
+	  Git add .	     : chuyển tất cả file từ đỏ thành xanh
+	+ Git commit -m"message" : chuyển từ staged --> Unmodified (lưu file)
+	+ Git push origin [branch-hiện-tại]:[branch-github] : đẩy tất cả file ở trạng thái Unmodified lên branch của repo Github
 	
