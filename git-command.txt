@@ -4,13 +4,21 @@
 	- git fetch : lấy dữ liệu từ repo của github về repo của local
 	- git branch [tên nhánh mới ở local] [tên nhánh origin ở github] : tạo branch mới
 	- git checkout [tên nhánh] : chuyển nhánh
+	--> git checkout -b [tên nhánh mới ở local] [tên nhánh origin ở github] : tạo branch mới và checkout qua nhánh mới
 
 	==============================
 	- Sau khi code:
 	+ git status : kiểm tra trạng thái hiện tại của repo (có file nào mới vừa tạo) (đỏ - untracked ; xanh - staged)
 	+ git add [tên file] : chuyển file từ đỏ thành xanh 
-	  git add .	     : chuyển tất cả file từ đỏ thành xanh
-	+ git commit -m"message" : chuyển từ staged --> Unmodified (lưu file)
-	+ git push origin [branch-hiện-tại-local]:[branch-github] : đẩy tất cả file ở trạng thái Unmodified lên branch của repo github
+	+ git add .	     : chuyển tất cả file từ đỏ thành xanh
+	+ git commit -m"[tên chức năng]-[tên người code] [thời gian]" : chuyển từ staged --> Unmodified (lưu file)
+	+ git push origin HEAD:[branch-github] : đẩy tất cả file ở trạng thái Unmodified lên branch của repo github
+
+	
+	- Merge code:
+	+ git merge [tên branch 1] [tên branch 2]: merge dữ liệu của branch 1 vào branch 2
+
+	+ ví dụ: git merge todo-app-1.0 todo-app-2.0 : merge dữ liệu của todo-app-1.0 vào todo-app-2.0
+		* Nếu xảy ra conflict --> fix conflict 
 	
 	
